@@ -9,7 +9,7 @@ src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,50:1a0533,
 <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 
 <!-- AI Agent 风格打字机效果 -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=22&pause=1000&color=FF2D78&center=true&vCenter=true&width=700&lines=『+あなたは+翼を+持っているから+』;『+You+must+leave+because+you+have+wings+』;『+AI+%2F+Backend+%2F+FullStack+Developer+』;『+Building+Luna+—+OS-level+AI+Pet+』)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=22&pause=1000&color=FF2D78&center=true&vCenter=true&width=700&lines=『+あなたは+翼を+持っているから、+去らなければならない+』;『+You+must+leave+because+you+have+wings+』;『+AI+%2F+Backend+%2F+FullStack+Developer+』;『+Building+Luna+—+OS-level+AI+Pet+』)](https://git.io/typing-svg)
 
 <br/>
 
@@ -220,8 +220,7 @@ akLabel=ff2d78&sideLabels=ff2d78&dates=888888" height="180"/>
 
 <!-- 底部波浪 -->
 <img width="100%"
-src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1b2a,50:1a0533,100:0d0d0d&height=120&section=footer&text=あなたは翼を持っているから、去らなければならない&fontSize=
-13&fontColor=ff2d78&fontAlignY=65&animation=twinkling"/>                                                                                                                            
+src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1b2a,50:1a0533,100:0d0d0d&height=120&section=footer&text=あなたは翼を持っているから、去らなければならない&fontSize=13&fontColor=ff2d78&fontAlignY=65&animation=twinkling"/>                                                                                                                            
                                                                                                                                                                                     
 </div>
 
