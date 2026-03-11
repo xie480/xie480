@@ -40,7 +40,7 @@
   </thead>
   <tbody>
     <tr>
-      <td align="center">📡 CSDN 博客</td>
+      <td align="center">CSDN 博客</td>
       <td align="center">
         <a href="https://blog.csdn.net/2401_88959292?spm=1000.2115.3001.5343">
           <img src="https://img.shields.io/badge/Yilena's%20Blog-FF6B35?style=for-the-badge&logo=blogger&logoColor=white" />
@@ -48,7 +48,7 @@
       </td>
     </tr>
     <tr>
-      <td align="center">📧 EMAIL</td>
+      <td align="center">EMAIL</td>
       <td align="center">
         <a href="mailto:yilena0505@163.com">
           <img src="https://img.shields.io/badge/yilena0505%40163.com-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" />
@@ -56,13 +56,13 @@
       </td>
     </tr>
     <tr>
-      <td align="center">🎮 Discord</td>
+      <td align="center">Discord</td>
       <td align="center">
         <img src="https://img.shields.io/badge/CLASSIFIED-5865F2?style=for-the-badge&logo=discord&logoColor=white" />
       </td>
     </tr>
     <tr>
-      <td align="center">🐦 X (Twitter)</td>
+      <td align="center">X (Twitter)</td>
       <td align="center">
         <img src="https://img.shields.io/badge/CLASSIFIED-000000?style=for-the-badge&logo=x&logoColor=white" />
       </td>
