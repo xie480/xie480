@@ -198,7 +198,6 @@
 
 > 基於 LLM 的桌面嵌入式 Live2D 操作系統助手。
 
-<div align="center">
 <br/>
 
 | 模塊 | 描述 | 狀態 |
@@ -218,7 +217,6 @@
 <img src="https://img.shields.io/badge/Live2D-FF2D78?style=for-the-badge&logo=pixiv&logoColor=white" />
 <img src="https://img.shields.io/badge/LLM_RAG-00F5FF?style=for-the-badge&logo=openai&logoColor=black" />
 
-</div>
 <br/>
 
 </details>
