@@ -200,8 +200,7 @@ akLabel=ff2d78&sideLabels=ff2d78&dates=888888" height="180"/>
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=xie480&theme=radical&no-frame=false&no-bg=false&margin-w=6&row=1&column=7)](https://github.com/ryo-ma/github-profile-t
-rophy)                                                                                                                                                                              
+[![trophy](https://github-profile-trophy.vercel.app/?username=xie480&theme=radical&no-frame=false&no-bg=false&margin-w=6&row=1&column=7)](https://github.com/ryo-ma/github-profile-trophy)                                                                                                                                                                              
                                                                                                                                                                                     
 </div>
 
