@@ -354,12 +354,12 @@
 </svg>
 </div>
 
-## &nbsp;`05`&nbsp; // SIGNAL &nbsp;·&nbsp; 賽博貓貓
+## &nbsp;`05`&nbsp; // SIGNAL &nbsp;·&nbsp; 耄耋箴言
 
 <div align="center">
 <br/>
 
-<img src="https://cataas.com/cat?width=420&height=220" width="420" style="border-radius:16px;" />
+<img src="https://th.bing.com/th/id/OIP._0qB5Q2xCni-h72NS72lyAHaHI?w=184&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" width="420" style="border-radius:16px;" />
 
 <br/><br/>
 
