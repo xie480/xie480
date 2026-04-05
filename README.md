@@ -151,59 +151,86 @@
 
 <br/>
 
-## &nbsp`03`&nbsp; 桜の記録 · PROJECT ARCHIVE
+## &nbsp;`03`&nbsp; 桜の記録 · PROJECT ARCHIVE
+
 <details open>
 <summary><b>ACTIVE · 开发中 &nbsp;|&nbsp; Luna &nbsp;<code>HTML + JavaScript + CSS + Java + Python</code></b></summary>
 <br/>
+
 > 采用桌面宿主层、智能中枢层、记忆检索层的分层结构，整体架构具备较强扩展性，适合持续迭代与功能演进。  
 > 面向 OS-level Live2D AI Agent 的方向推进，聚焦桌面交互、长期记忆与智能调度能力。
-&nbsp;&nbsp;&nbsp;&nbsp;![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+
+<div>
+  <img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+</div>
 </details>
+
 <br/>
 
 <details open>
 <summary><b>PAUSED · 暂停维护 &nbsp;|&nbsp; CampusTool &nbsp;<code>Java</code></b></summary>
 <br/>
+
 > 面向校园服务场景的后端基础设施项目，可用于承载多功能工具类业务与双端联动场景。  
 > 整体设计偏向高并发、高可用与低成本扩展思路，具备较好的服务拆分与业务承载能力。
-&nbsp;&nbsp;&nbsp;&nbsp;![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+
+<div>
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+</div>
 </details>
+
 <br/>
 
 <details open>
 <summary><b>STABLE · 已成形 &nbsp;|&nbsp; QRManager &nbsp;<code>TypeScript</code></b></summary>
 <br/>
+
 > 面向二维码跳转与自动化链路管理场景的系统，可实现多入口接入、跳转控制与自动化流程处理。  
 > 整体架构偏中间层与链路调度型设计，适合用于统一收敛跳转逻辑与外部系统对接。
-&nbsp;&nbsp;&nbsp;&nbsp;![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+
+<div>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+</div>
 </details>
+
 <br/>
 
 <details open>
 <summary><b>EARLY_STAGE · 初期开发 &nbsp;|&nbsp; Yilena Japanese Lab &nbsp;<code>Java</code></b></summary>
 <br/>
+
 > 面向日语学习场景的在线平台，可用于词汇学习、练习管理与学习进度记录。  
 > 采用前后端分离结构，整体方向清晰，适合继续扩展学习内容与个性化功能模块。
-&nbsp;&nbsp;&nbsp;&nbsp;![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+
+<div>
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+</div>
 </details>
+
 <br/>
 
 <details open>
 <summary><b>ARCHIVED · 归档保存 &nbsp;|&nbsp; Tetris &nbsp;<code>C++</code></b></summary>
 <br/>
+
 > 基于 EasyX 的经典俄罗斯方块桌面游戏实现，支持完整的核心玩法与图形交互流程。  
 > 架构规模较小但逻辑闭环完整，适合作为图形渲染与规则实现类项目展示。
-&nbsp;&nbsp;&nbsp;&nbsp;![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+
+<div>
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" />
+</div>
 </details>
+
 <br/>
 
 <div align="center">
   ━━━━━━━━━━━━ ✦ 夢 · 桜 · 侍 · 未来 · 勇気 · 星 · 魂 · 光 ✦ ━━━━━━━━━━━━
 </div>
+
 <br/>
 
 ## &nbsp;`05`&nbsp; 夜の演算 · MOTION
