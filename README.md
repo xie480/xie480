@@ -94,7 +94,6 @@
   <img src="https://img.shields.io/badge/Xxl--Job-FF5722?style=for-the-badge&amp;logo=clockify&amp;logoColor=white" />
   <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&amp;logo=jsonwebtokens&amp;logoColor=white" />
   <img src="https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&amp;logo=socketdotio&amp;logoColor=white" />
-  <img src="https://img.shields.io/badge/RESTful_API-4CAF50?style=for-the-badge" />
 
   <br/><br/>
 
