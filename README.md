@@ -5,8 +5,6 @@
   
   <img src="https://img.shields.io/badge/ステータス-開発中-ff2d78?style=for-the-badge&amp;labelColor=0d0221&amp;logo=statuspal&amp;logoColor=ff2d78" />
   <img src="https://img.shields.io/badge/拠点-広州大学-c8a4ff?style=for-the-badge&amp;labelColor=0d0221" />
-  <img src="https://img.shields.io/badge/LUNA-PHASE_5_∞-00f5ff?style=for-the-badge&amp;labelColor=0d0221" />
-  <img src="https://img.shields.io/badge/SAKURA-🌸_桜_花見_🌸-ff2d78?style=for-the-badge&amp;labelColor=1a0533" />
 </div>
 
 <br/>
