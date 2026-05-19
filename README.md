@@ -187,9 +187,9 @@
 
   <br/>
 
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=xie480&amp;theme=radical" height="160" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=xie480&amp;theme=radical" height="160" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=xie480&amp;theme=radical" height="160" />
+![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=xie480&theme=radical)
+![](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=xie480&theme=radical)
+![](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=xie480&theme=radical)
 </div>
 
 <br/>
