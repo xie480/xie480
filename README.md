@@ -1,7 +1,7 @@
 <div align="center">
   <img width="100%" src="https://capsule-render.vercel.app/api?type=venom&amp;color=0:0d0221,25:1a0533,50:2d0a3e,75:0d1b2a,100:0d0221&amp;height=240&amp;section=header&amp;text=Yilena&amp;fontSize=90&amp;fontColor=ff2d78&amp;fontAlignY=42&amp;fontAlign=50&amp;desc=你必须离开，因为你拥有翅膀。&amp;descFontColor=c8a4ff&amp;descAlignY=66&amp;descAlign=50&amp;descSize=18&amp;animation=twinkling&amp;reversal=true&amp;stroke=ff2d78&amp;strokeWidth=1" />
   
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=18&duration=3000&pause=800&color=FF2D78&center=true&vCenter=true&width=800&height=45&lines=『+あなたは+翼を+持っているから+去らなければならない+』;『+AI+%2F+%2F+FullStack+Agent+HACHIMI+』;『+梦想+是+可以+随时哈气+』;『+Java+%7C+Golang+%7C+Python+%7C+TypeScript+%7C+CPP+%7C+RUST+』;『+桜の+ように+散っても+美しくあれ+』)](https://git.io/typing-svg)
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=18&duration=3000&pause=800&color=FF2D78&center=true&vCenter=true&width=800&height=45&lines=『+あなたは+翼を+持っているから+去らなければならない+』;『+AI+%2F+FullStack+%2F+Agent+%2F+HACHIMI+』;『+梦想是可以随时随地就地哈气+』;『+Java+%7C+Golang+%7C+Python+%7C+TypeScript+%7C+CPP+%7C+RUST+』;『+桜の+ように+散っても+美しくあれ+』)](https://git.io/typing-svg)
   
   <img src="https://img.shields.io/badge/ステータス-開発中-ff2d78?style=for-the-badge&amp;labelColor=0d0221&amp;logo=statuspal&amp;logoColor=ff2d78" />
   <img src="https://img.shields.io/badge/拠点-広州大学-c8a4ff?style=for-the-badge&amp;labelColor=0d0221" />
