@@ -23,14 +23,14 @@
       <th>チャンネル</th>
       <th>リンク</th>
     </tr>
-    <tr>
-      <td align="center">CSDN 博客</td>
-      <td align="center">
-        <a href="https://blog.csdn.net/2401_88959292?spm=1000.2115.3001.5343">
-          <img src="https://img.shields.io/badge/Yilena's%20Blog-FF6B35?style=for-the-badge&amp;logo=blogger&amp;logoColor=white" />
-        </a>
-      </td>
-    </tr>
+<tr>
+  <td align="center">个人小站</td>
+  <td align="center">
+    <a href="https://blog.yilena.cloud/">
+      <img src="https://img.shields.io/badge/夢 の 終 着 駅-4A90E2?style=for-the-badge&amp;logo=astro&amp;logoColor=white" />
+    </a>
+  </td>
+</tr>
     <tr>
       <td align="center">EMAIL</td>
       <td align="center">
