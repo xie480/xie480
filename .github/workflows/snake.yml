@@ -1,0 +1,51 @@
+name: 🐍 Generate Multi-Source Snake
+
+on:
+  schedule:
+    # 每天 UTC 16:00 执行
+    # 北京时间 / 日本时间都是 00:00
+    - cron: "0 16 * * *"
+
+  # 允许你在 Actions 页面手动运行
+  workflow_dispatch:
+
+  # 修改 workflow 时也可以触发
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    permissions:
+      contents: write
+
+    steps:
+      # 1. Checkout
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Generate Multi-Source Snake
+      - name: 🐍 Generate GitHub + Gitee Snake
+        uses: Zqzqsb/MultiSourceSnake@v1.0
+        with:
+          GITHUB_USER: xie480
+          GITEE_USER: Yilena
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+            dist/github-snake.gif
+
+      # 3. Publish generated files
+      - name: 🚀 Publish Snake
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          build_dir: dist
+          target_branch: output
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
