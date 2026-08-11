@@ -175,6 +175,22 @@
 <div align="center">
   <br/><br/>
 
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/xie480/xie480/output/github-snake-dark.svg"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/xie480/xie480/output/github-snake.svg"
+    />
+    <img
+      alt="GitHub + Gitee Contribution Snake"
+      src="https://raw.githubusercontent.com/xie480/xie480/output/github-snake.svg"
+      width="100%"
+    />
+  </picture>
+
   <img src="https://streak-stats.demolab.com/?user=xie480&amp;theme=radical&amp;background=0d0221&amp;border=ff2d78&amp;stroke=ff2d78&amp;ring=00f5ff&amp;fire=ff2d78&amp;currStreakNum=ffffff&amp;sideNums=00f5ff&amp;currStreakLabel=ff2d78&amp;sideLabels=ff2d78&amp;dates=888888&amp;hide_border=false" height="175" />
 
   <br/><br/>
@@ -192,21 +208,7 @@
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=xie480&amp;theme=radical" height="160" />
 </div>
 
-<picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/xie480/xie480/output/github-snake-dark.svg"
-    />
-    <source
-      media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/xie480/xie480/output/github-snake.svg"
-    />
-    <img
-      alt="GitHub + Gitee Contribution Snake"
-      src="https://raw.githubusercontent.com/xie480/xie480/output/github-snake.svg"
-      width="100%"
-    />
-  </picture>
+
 
 <br/>
 
