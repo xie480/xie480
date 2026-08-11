@@ -192,6 +192,22 @@
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=xie480&amp;theme=radical" height="160" />
 </div>
 
+<picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/xie480/xie480/output/github-snake-dark.svg"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/xie480/xie480/output/github-snake.svg"
+    />
+    <img
+      alt="GitHub + Gitee Contribution Snake"
+      src="https://raw.githubusercontent.com/xie480/xie480/output/github-snake.svg"
+      width="100%"
+    />
+  </picture>
+
 <br/>
 
 <div align="center">
