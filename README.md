@@ -36,18 +36,6 @@
         </a>
       </td>
     </tr>
-    <tr>
-      <td align="center">Discord</td>
-      <td align="center">
-        <img src="https://img.shields.io/badge/CLASSIFIED_▓▓▓▓▓▓-5865F2?style=for-the-badge&amp;logo=discord&amp;logoColor=white" />
-      </td>
-    </tr>
-    <tr>
-      <td align="center">X (Twitter)</td>
-      <td align="center">
-        <img src="https://img.shields.io/badge/CLASSIFIED_▓▓▓▓▓▓-000000?style=for-the-badge&amp;logo=x&amp;logoColor=white" />
-      </td>
-    </tr>
   </table>
 </div>
 
