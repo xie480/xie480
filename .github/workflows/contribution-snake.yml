@@ -21,6 +21,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITCODE_USER: ${{ vars.GITCODE_USER }}
           GITCODE_TOKEN: ${{ secrets.GITCODE_TOKEN }}
+          GITEE_USER: ${{ vars.GITEE_USER }}
+          GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
           WINDOW_DAYS: "365"
           outputs: |
             /github/workspace/dist/multisource-snake.gif
