@@ -1,0 +1,107 @@
+name: Profile metrics
+
+on:
+  schedule:
+    - cron: '17 1 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-assets
+  cancel-in-progress: false
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check optional Metrics token
+        id: token
+        shell: bash
+        env:
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: |
+          if [ -n "$METRICS_TOKEN" ]; then
+            echo 'ready=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'ready=false' >> "$GITHUB_OUTPUT"
+            echo 'Metrics is optional. Add METRICS_TOKEN and run this workflow to enable it; the current statistics card remains available.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Checkout current default branch
+        if: steps.token.outputs.ready == 'true'
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Generate Metrics without publishing
+        if: steps.token.outputs.ready == 'true'
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: xie480
+          filename: assets/metrics.svg
+          template: classic
+          base: header, activity, community
+          base_indepth: no
+          config_timezone: Asia/Shanghai
+          config_display: regular
+          config_output: svg
+          config_animations: no
+          config_base64: yes
+          plugin_activity: yes
+          plugin_activity_limit: 4
+          plugin_activity_load: 100
+          plugin_activity_days: 30
+          plugin_activity_visibility: public
+          plugin_activity_timestamps: yes
+          plugin_activity_filter: push, issue, pr, release, review
+          plugins_errors_fatal: yes
+          use_mocked_data: no
+          verify: yes
+          retries: 2
+          retries_delay: 30
+          output_action: none
+          extras_css: |
+            svg {
+              background: #f6f2f0 !important;
+              color: #3f3440 !important;
+            }
+            h1, h2, h3 {
+              color: #9b4e66 !important;
+              font-family: Georgia, "Times New Roman", serif !important;
+            }
+            .field svg {
+              fill: #b7778e;
+            }
+
+      - name: Validate, activate, and publish together
+        if: steps.token.outputs.ready == 'true'
+        shell: bash
+        env:
+          TARGET_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          git diff --quiet
+          git diff --cached --quiet
+          git fetch --no-tags origin "refs/heads/$TARGET_BRANCH"
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse FETCH_HEAD)" ]; then
+            echo 'The default branch changed during rendering. Publishing was skipped; the next run will use the latest README.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          python .github/scripts/activate-metrics.py \
+            --readme README.md \
+            --rendered /metrics_renders/assets/metrics.svg \
+            --target assets/metrics.svg
+          git add -- README.md assets/metrics.svg
+          if git diff --cached --quiet; then
+            echo 'Metrics is already current.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: refresh profile metrics [skip ci]'
+          git push origin "HEAD:refs/heads/$TARGET_BRANCH"
+          echo 'Metrics and its README link were published in one commit.' >> "$GITHUB_STEP_SUMMARY"

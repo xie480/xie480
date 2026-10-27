@@ -1,132 +1,64 @@
-<div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=venom&amp;color=0:0d0221,25:1a0533,50:2d0a3e,75:0d1b2a,100:0d0221&amp;height=240&amp;section=header&amp;text=Yilena&amp;fontSize=90&amp;fontColor=ff2d78&amp;fontAlignY=42&amp;fontAlign=50&amp;desc=你必须离开，因为你拥有翅膀。&amp;descFontColor=c8a4ff&amp;descAlignY=66&amp;descAlign=50&amp;descSize=18&amp;animation=twinkling&amp;reversal=true&amp;stroke=ff2d78&amp;strokeWidth=1" />
-  
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=18&duration=3000&pause=800&color=FF2D78&center=true&vCenter=true&width=800&height=45&lines=『+あなたは+翼を+持っているから+去らなければならない+』;『+AI+%2F+FullStack+%2F+Agent+%2F+HACHIMI+』;『+梦想是可以随时随地就地哈气+』;『+Java+%7C+Golang+%7C+Python+%7C+TypeScript+%7C+CPP+%7C+RUST+』;『+桜の+ように+散っても+美しくあれ+』)](https://git.io/typing-svg)
-
-  
 <p align="center">
-  <img
-    src="https://count.getloli.com/@Yilena-INFO?theme=original-new&amp;padding=1&amp;offset=1&amp;align=top&amp;scale=1&amp;pixelated=1&amp;darkmode=auto&amp;num=3194927054"
-    alt="Yilena Counter"
-    width="100%"
-  />
+  <img src="./assets/yilena-cover.png" alt="Yilena — 月白樱粉的封面，黑发角色、樱花与飘落的羽毛。" width="100%" />
 </p>
 
-</div>
+<p align="center">
+  <a href="https://blog.yilena.cloud/" title="访问夢の終着駅个人博客"><img src="./assets/ui/blog-button.svg" alt="夢の終着駅 · Blog" width="264" height="68" /></a>
+  &nbsp;
+  <a href="mailto:yilena0505@163.com" title="发送邮件至 yilena0505@163.com"><img src="./assets/ui/mail-button.svg" alt="Write to me · yilena0505@163.com" width="264" height="68" /></a>
+</p>
 
-<br/>
+<br />
 
-<div align="center">
-  ━━━━━━━━━━━━ ✦ 夢 · 桜 · 侍 · 未来 · 勇気 · 星 · 魂 · 光 ✦ ━━━━━━━━━━━━
-</div>
+<p align="center">
+  <img src="https://count.getloli.com/@Yilena-INFO?theme=rule34&amp;padding=1&amp;offset=0&amp;align=top&amp;scale=1.0&amp;pixelated=1&amp;darkmode=auto&amp;num=3194927054" alt="Yilena 二次元计数器" width="100%" />
+</p>
 
-<br/>
+<br />
 
-## &nbsp;`01`&nbsp; 魂の信号 · SIGNAL
+<h2 align="center"><img src="./assets/ui/section-insights.svg" alt="観測 · Insights" width="100%" /></h2>
 
-<div align="center">
-  <table>
-    <tr>
-      <th>チャンネル</th>
-      <th>リンク</th>
-    </tr>
-<tr>
-  <td align="center">个人小站</td>
-  <td align="center">
-    <a href="https://blog.yilena.cloud/">
-      <img src="https://img.shields.io/badge/夢 の 終 着 駅-4A90E2?style=for-the-badge&amp;logo=astro&amp;logoColor=white" />
-    </a>
-  </td>
-</tr>
-    <tr>
-      <td align="center">EMAIL</td>
-      <td align="center">
-        <a href="mailto:yilena0505@163.com">
-          <img src="https://img.shields.io/badge/yilena0505%40163.com-0078D4?style=for-the-badge&amp;logo=microsoft-outlook&amp;logoColor=white" />
-        </a>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<br/>
-
-<div align="center">
-  ━━━━━━━━━━━━ ✦ 夢 · 桜 · 侍 · 未来 · 勇気 · 星 · 魂 · 光 ✦ ━━━━━━━━━━━━
-</div>
-
-<br/>
-
-
-## &nbsp;`02`&nbsp; 夜の演算 · MOTION
-
-<div align="center">
-  <br/><br/>
-
+<p align="center">
   <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/xie480/xie480/output/github-snake-dark.svg"
-    />
-    <source
-      media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/xie480/xie480/output/github-snake.svg"
-    />
-    <img
-      alt="GitHub + Gitee Contribution Snake"
-      src="https://raw.githubusercontent.com/xie480/xie480/output/github-snake.svg"
-      width="100%"
-    />
+    <source media="(max-width: 600px)" srcset="./assets/stats/profile-mobile.svg" />
+    <img src="./assets/stats/profile-details.svg" alt="Yilena 的 GitHub 贡献趋势、公开仓库和账号概览" width="100%" />
   </picture>
+</p>
 
-  <img src="https://streak-stats.demolab.com/?user=xie480&amp;theme=radical&amp;background=0d0221&amp;border=ff2d78&amp;stroke=ff2d78&amp;ring=00f5ff&amp;fire=ff2d78&amp;currStreakNum=ffffff&amp;sideNums=00f5ff&amp;currStreakLabel=ff2d78&amp;sideLabels=ff2d78&amp;dates=888888&amp;hide_border=false" height="175" />
+<p align="center">
+  <img src="./assets/stats/streak.svg" alt="GitHub 累计贡献、当前连续贡献天数与最长连续贡献天数" width="650" />
+</p>
 
-  <br/><br/>
+<p align="center">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/stats/grid-mobile.svg" />
+    <img src="./assets/stats/grid.svg" alt="GitHub 仓库语言分布、提交语言分布、Stars/Commits/PRs/Issues 统计，以及北京时间提交时段分布" width="100%" />
+  </picture>
+</p>
 
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=xie480&amp;bg_color=0d0221&amp;color=ff2d78&amp;line=00f5ff&amp;point=ff2d78&amp;area=true&amp;area_color=1a0533&amp;hide_border=false&amp;radius=6" width="95%" />
+<!-- METRICS:START -->
+<!-- METRICS:END -->
 
-  <br/><br/>
+<br />
 
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=xie480&amp;theme=radical" width="95%" />
+<h2 align="center"><img src="./assets/ui/section-activity.svg" alt="足跡 · Activity" width="100%" /></h2>
 
-  <br/>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xie480/xie480/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/xie480/xie480/output/github-snake.svg" />
+    <img src="https://raw.githubusercontent.com/xie480/xie480/output/github-snake.svg" alt="Yilena 的 GitHub 与 Gitee 贡献贪吃蛇动画" width="100%" />
+  </picture>
+</p>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=xie480&amp;theme=radical" height="160" /> 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=xie480&amp;theme=radical" height="160" /> 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=xie480&amp;theme=radical" height="160" />
-</div>
+<br />
 
+<p align="center">
+  <img src="./assets/ui/signoff.svg" alt="桜のように、散っても美しく。また、次のコミットで。" width="700" />
+</p>
 
+<p align="center">
+  <img src="./assets/sakura-river.gif" alt="像素风樱花河岸：粉色花瓣、浅蓝色桥梁与河边的猫。" width="100%" />
+</p>
 
-<br/>
-
-<div align="center">
-  ━━━━━━━━━━━━ ✦ 夢 · 桜 · 侍 · 未来 · 勇気 · 星 · 魂 · 光 ✦ ━━━━━━━━━━━━
-</div>
-
-<br/>
-
-## &nbsp;`03`&nbsp; 星喰いの軌跡 · CONTRIBUTION SNAKE
-
-<div align="center">
-  <img src="https://img.shields.io/badge/🏆_Best_Stars-Ranked-ff2d78?style=for-the-badge&amp;labelColor=1a0533" />
-  <img src="https://img.shields.io/badge/🔥_Commits-Active_Streak-ff6b35?style=for-the-badge&amp;labelColor=1a0533" />
-  <img src="https://img.shields.io/badge/💎_Repos-Multi_Stack-c8a4ff?style=for-the-badge&amp;labelColor=1a0533" />
-  <img src="https://img.shields.io/badge/🌸_Sakura-Spirit-00f5ff?style=for-the-badge&amp;labelColor=1a0533" />
-  <img src="https://img.shields.io/badge/🤖_AI_Builder-Luna_Phase_5-ff2d78?style=for-the-badge&amp;labelColor=1a0533" />
-  <img src="https://img.shields.io/badge/⚔️_Full_Stack-Samurai-c8a4ff?style=for-the-badge&amp;labelColor=1a0533" />
-</div>
-
-<br/>
-<br/>
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=xie480&amp;color=ff2d78&amp;style=for-the-badge&amp;label=NEURAL+LINK+ESTABLISHED" />
-</div>
-
-<br/>
-
-<div align="center">
-  <br/>
-  <img src="https://img.shields.io/badge/🌸_ねこ_is_sleeping..._ฅ(=^ω^=)ฅ_🌸-1a0533?style=for-the-badge&amp;labelColor=1a0533&amp;color=ff2d78" />
-</div>
+<p align="center"><em>ねこは、ひと休み。 ฅ(=^ω^=)ฅ</em></p>

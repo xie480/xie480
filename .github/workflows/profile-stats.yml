@@ -1,0 +1,47 @@
+name: Profile statistics
+
+on:
+  schedule:
+    - cron: '37 1 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-assets
+  cancel-in-progress: false
+
+jobs:
+  statistics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout current default branch
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Refresh fixed public statistics sources
+        run: python .github/scripts/refresh-stats.py --output-dir assets/stats
+
+      - name: Publish validated cards
+        shell: bash
+        env:
+          TARGET_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin "refs/heads/$TARGET_BRANCH"
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse FETCH_HEAD)" ]; then
+            echo 'The default branch changed during rendering. Publishing was skipped; the next run will use the latest checkout.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git add -- assets/stats
+          if git diff --cached --quiet; then
+            echo 'The public statistics cards are already current.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: refresh public profile cards [skip ci]'
+          git push origin "HEAD:refs/heads/$TARGET_BRANCH"
