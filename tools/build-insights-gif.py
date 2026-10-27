@@ -1,4 +1,4 @@
-"""Build a subtle, palette-matched looping blossom accent for the README header."""
+"""Build palette-matched looping blossom accents for README section headers."""
 from math import pi, sin
 from pathlib import Path
 
@@ -6,14 +6,13 @@ from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parent.parent
 UI = ROOT / 'assets' / 'ui'
-SOURCE = UI / 'section-insights-keyframe.png'
-OUTPUT = UI / 'section-insights.gif'
+HEADER_STEMS = ('section-insights', 'section-activity')
 FRAME_COUNT = 36
 FRAME_DURATION_MS = 120
 
 
 def make_petal() -> Image.Image:
-    """Draw one small, softly antialiased sakura petal with a fine vein."""
+    """Draw one small, softly antialiased sakura petal."""
     scale = 4
     petal = Image.new('RGBA', (20 * scale, 14 * scale), (0, 0, 0, 0))
     draw = ImageDraw.Draw(petal)
@@ -23,8 +22,7 @@ def make_petal() -> Image.Image:
     ]
     silhouette = [(x * scale, y * scale) for x, y in silhouette]
     draw.polygon(silhouette, fill=(206, 145, 167, 255))
-    petal = petal.resize((20, 14), Image.Resampling.LANCZOS)
-    return petal
+    return petal.resize((20, 14), Image.Resampling.LANCZOS)
 
 
 def rounded_rect_mask() -> Image.Image:
@@ -48,25 +46,26 @@ def rounded_rect_mask() -> Image.Image:
     return mask
 
 
-def main() -> None:
-    base = Image.open(SOURCE).convert('RGBA')
+def build_gif(stem: str, petal: Image.Image, opaque_shape: Image.Image,
+              transparent_corners: Image.Image) -> None:
+    source = UI / f'{stem}-keyframe.png'
+    output = UI / f'{stem}.gif'
+    base = Image.open(source).convert('RGBA')
     if base.size != (900, 108):
-        raise ValueError(f'Expected a 900x108 keyframe, got {base.size}')
-    opaque_shape = rounded_rect_mask()
-    transparent_corners = Image.eval(opaque_shape, lambda value: 255 - value)
-    # Rebuild antialiased edge pixels against the intended paper colour; the
-    # GIF transparency index then blends the rounded corners with any theme.
+        raise ValueError(f'Expected a 900x108 keyframe at {source}, got {base.size}')
+
+    # Rebuild edge pixels against the intended paper colour before making the
+    # GIF corners transparent, so the card blends with light and dark themes.
     for y in range(10):
         for x in range(10):
             for px, py in ((x, y), (899 - x, y), (x, 107 - y), (899 - x, 107 - y)):
                 if opaque_shape.getpixel((px, py)):
                     base.putpixel((px, py), (246, 242, 240, 255))
 
-    petal = make_petal()
     frames: list[Image.Image] = []
     for index in range(FRAME_COUNT):
         progress = index / FRAME_COUNT
-        # A single petal drifts toward the small blossom mark, then fades away.
+        # One petal drifts toward the blossom mark and fades away.
         x = 745 + round(48 * progress)
         y = 88 - round(40 * progress) + round(2 * sin(progress * 2 * pi))
         opacity = round(104 * sin(pi * progress) ** 1.35)
@@ -80,8 +79,8 @@ def main() -> None:
         frame.alpha_composite(layer, (x, y))
         frames.append(frame.convert('RGB'))
 
-    # Share a single palette across frames to avoid colour flicker in the paper
-    # background and the outlined lettering.
+    # Use one palette across frames to avoid colour flicker in the paper and
+    # outlined text. Index 0 is reserved for the transparent rounded corners.
     palette = frames[0].quantize(colors=255, method=Image.Quantize.MEDIANCUT)
     palette_colors = (palette.getpalette() or [])[:765]
     gif_palette = [255, 0, 255] + palette_colors
@@ -93,25 +92,36 @@ def main() -> None:
         image.putpalette(gif_palette)
         image.paste(0, mask=transparent_corners)
         indexed.append(image)
+
     indexed[0].save(
-        OUTPUT,
+        output,
         save_all=True,
         append_images=indexed[1:],
         duration=FRAME_DURATION_MS,
         loop=0,
         optimize=True,
-        disposal=2,
+        # Keep the previous frame in place between optimized partial updates,
+        # so the title artwork never gets cleared while only the petal moves.
+        disposal=1,
         transparency=0,
         background=0,
     )
-    animation = Image.open(OUTPUT)
+    animation = Image.open(output)
     durations = []
     for frame_index in range(animation.n_frames):
         animation.seek(frame_index)
         durations.append(animation.info.get('duration', 0))
-    print(f'Wrote {OUTPUT.name}: {base.width}x{base.height}, '
+    print(f'Wrote {output.name}: {base.width}x{base.height}, '
           f'{animation.n_frames} frames, {sum(durations)} ms loop, '
-          f'{OUTPUT.stat().st_size} bytes')
+          f'{output.stat().st_size} bytes')
+
+
+def main() -> None:
+    opaque_shape = rounded_rect_mask()
+    transparent_corners = Image.eval(opaque_shape, lambda value: 255 - value)
+    petal = make_petal()
+    for stem in HEADER_STEMS:
+        build_gif(stem, petal, opaque_shape, transparent_corners)
 
 
 if __name__ == '__main__':

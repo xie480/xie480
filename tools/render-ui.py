@@ -13,7 +13,6 @@ CSS = '''.paper{fill:#F6F2F0}.ink{fill:#24212A}.rose{fill:#9B4E66}
 .blush{fill:#EAD5DD}.muted{fill:#75636E}.white{fill:#FFFFFF}
 .shadow-dark{fill:#493943}.shadow-rose{fill:#CDA6B5}
 .panel-dark{fill:#302832}.panel-paper{fill:#F6F2F0}
-.arrow-dark{fill:#302832;stroke:#806B77}.arrow-paper{fill:#F6F2F0;stroke:#D0A9B7}
 .icon{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}'''
 (OUT / 'theme.css').write_text(CSS + '\n', encoding='utf-8')
 fonts = {
@@ -67,13 +66,11 @@ blog_button = (
     '<rect x="12" y="11" width="41" height="42" rx="8" class="panel-dark"/>'
     '<rect x="12.5" y="11.5" width="40" height="41" rx="7.5" fill="none" stroke="#66515E" stroke-width="0.7"/>'
     '<path d="M63 14V50" stroke="#6C5864" stroke-width="0.8"/>'
-    '<circle cx="239" cy="32" r="11" class="arrow-dark" stroke-width="0.8"/>'
-    '<path d="M231 18H241" stroke="#9B4E66" stroke-width="1.4" stroke-linecap="round"/>'
     + icon(book, 19, 20, PALETTE['paper'], 0.92)
     + text('JOURNAL · 01', 73, 16, 7, 'sans', 'rose', tracking=0.65)
     + text('夢の終着駅', 73, 35, 19, 'cjk', 'paper')
     + text('Blog & thoughts', 73, 53, 13, 'serif', 'blush')
-    + icon(arrow, 232, 25, PALETTE['blush'], 0.9)
+    + icon(arrow, 230, 24, PALETTE['blush'], 1.0)
 )
 svg('blog-button.svg', 264, 68, '夢の終着駅 · Blog', blog_button)
 
@@ -85,13 +82,11 @@ mail_button = (
     '<rect x="12" y="11" width="41" height="42" rx="8" class="panel-paper"/>'
     '<rect x="12.5" y="11.5" width="40" height="41" rx="7.5" fill="none" stroke="#D6BAC4" stroke-width="0.7"/>'
     '<path d="M63 14V50" stroke="#D1AEBB" stroke-width="0.8"/>'
-    '<circle cx="239" cy="32" r="11" class="arrow-paper" stroke-width="0.8"/>'
-    '<path d="M231 18H241" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round"/>'
     + icon(mail, 18, 20, PALETTE['rose'], 0.92)
     + text('CONTACT · 02', 73, 16, 7, 'sans', 'rose', tracking=0.55)
     + text('Write to me', 73, 35, 18, 'serif', 'ink')
     + text('yilena0505@163.com', 73, 53, 12, 'sans', 'muted')
-    + icon(arrow, 232, 25, PALETTE['rose'], 0.9)
+    + icon(arrow, 230, 24, PALETTE['rose'], 1.0)
 )
 svg('mail-button.svg', 264, 68, 'Write to me · yilena0505@163.com', mail_button)
 

@@ -46,7 +46,12 @@
 
 <br />
 
-<h2 align="center"><img src="./assets/ui/section-activity.svg" alt="足跡 · Activity" width="100%" /></h2>
+<h2 align="center">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/ui/section-activity.svg" />
+    <img src="./assets/ui/section-activity.gif" alt="足跡 · Activity — 樱花花瓣轻轻浮动的活动章节标题" width="900" height="108" />
+  </picture>
+</h2>
 
 <p align="center">
   <picture>
