@@ -53,12 +53,14 @@
   </picture>
 </h2>
 
+<p align="center"><br />
+  Data from：GitHub、Gitee、GitCode<br />
+</p>
+
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xie480/xie480/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/xie480/xie480/output/github-snake.svg" />
-    <img src="https://raw.githubusercontent.com/xie480/xie480/output/github-snake.svg" alt="Yilena 的 GitHub 与 Gitee 贡献贪吃蛇动画" width="100%" />
-  </picture>
+  <img src="./dist/multisource-snake.gif"
+       alt="GitHub、Gitee、GitCode 最近 365 天的合并提交与贪吃蛇进度"
+       width="100%" />
 </p>
 
 <br />
