@@ -54,7 +54,7 @@
 </h2>
 
 <p align="center"><br />
-  Data from：GitHub、Gitee、GitCode<br />
+  Contributions from GitHub, Gitee & GitCode<br />
 </p>
 
 <p align="center">
