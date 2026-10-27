@@ -16,7 +16,12 @@
 
 <br />
 
-<h2 align="center"><img src="./assets/ui/section-insights.svg" alt="観測 · Insights" width="100%" /></h2>
+<h2 align="center">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/ui/section-insights.svg" />
+    <img src="./assets/ui/section-insights.gif" alt="観測 · Insights — 樱花花瓣轻轻浮动的统计章节标题" width="900" height="108" />
+  </picture>
+</h2>
 
 <p align="center">
   <picture>

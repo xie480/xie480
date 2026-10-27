@@ -28,11 +28,13 @@ Metrics 的默认刷新时间为北京时间 09:17 左右；两个工作流共�
 
 ## UI 样式如何生效
 
-博客、邮箱、章节标题和收尾使用本地 SVG 组件。SVG 内嵌 CSS 类控制背景与颜色，字形已转为路径，因此不需要浏览者加载外部字体。
+博客、邮箱、章节标题和收尾使用本地 SVG 组件。博客与邮箱按钮增加了内外描边、底部立体边、图标底板、分隔线和箭头徽记；链接地址与可访问文本保持不变。按钮视觉比原版更有层次，但 GitHub README 会清理自定义 CSS/脚本，所以不提供鼠标悬停切换效果。
 
-`assets/ui/theme.css` 是对应样式参考。GitHub README 不会全局加载它；真正生效的样式在各个 SVG 的 `<style>` 中。修改单张 SVG 的类样式即可调整该组件；也可在 Windows 安装有 `fontTools` 的 Python 环境运行 `python tools/render-ui.py`，从生成脚本重新输出整套组件。该生成器读取本机 Georgia、宋体和微软雅黑；无需将字体文件提交到 GitHub。它不是工作流运行依赖。
+`観測 · Insights` 普通模式显示 `section-insights.gif`：樱粉花瓣沿右侧装饰缓慢飘动，约 4.32 秒一轮；开启系统减少动态效果时，`<picture>` 会选择原 `section-insights.svg` 静态版本。GIF 为 900 × 108，约 106 KB，并保留透明圆角。GitHub 支持 README 图片/GIF，但不支持 SVG 动画。
 
-README 只用允许的 HTML、链接和图片选择，不依赖网页 CSS 或 JavaScript。按钮支持真实链接与键盘访问；图片形式的 SVG 不提供网页按钮的 hover 动效。
+`assets/ui/theme.css` 是对应样式参考。GitHub README 不会全局加载它；真正生效的样式在各个 SVG 的 `<style>` 中。修改按钮源代码后，可在 Windows 安装有 `fontTools` 的 Python 环境运行 `python tools/render-ui.py`，从生成脚本重新输出 SVG 组件。生成器读取本机 Georgia、宋体和微软雅黑；无需将字体文件提交到 GitHub。修改 Insights 标题时，先用浏览器按原生 900 × 108 尺寸更新 `assets/ui/section-insights-keyframe.png`，再运行 `python tools/build-insights-gif.py` 重建 GIF；此脚本依赖 Pillow。上述本地生成工具均不是远程工作流依赖。
+
+README 只用允许的 HTML、链接和图片选择，不依赖网页 CSS 或 JavaScript。图片形式的按钮不提供自定义 hover 动效；若要指针悬停状态，需放到独立网页中实现。
 
 ## 数据口径与已知边界
 
